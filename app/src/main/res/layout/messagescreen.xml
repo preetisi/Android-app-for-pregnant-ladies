@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header aligned to top -->
+
+    <include layout="@layout/header" />
+
+    <!-- Footer aligned to bottom -->
+
+    <include layout="@layout/footer" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/textViewMessage1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/M1"
+        />
+
+    <TextView
+        android:id="@+id/textViewMessage2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/M2"
+        android:layout_below="@+id/textViewMessage1"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewMessage3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/M3"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/textViewMessage2"
+        android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/buttonNextWeek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Week"
+            android:layout_marginBottom="60dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

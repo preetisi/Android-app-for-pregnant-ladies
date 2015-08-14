@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Login</string>
+    <string name="M1">This is your Week 1 of pregnancy</string>
+    <string name="M2">Please do yoga</string>
+    <string name="M3">Please eat green vegetables</string>
+    <string name="M4">Please do this workout</string>
+    <string name="M5">Iron is good for your baby</string>
+    <string name="M6">Please eat more protein</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>

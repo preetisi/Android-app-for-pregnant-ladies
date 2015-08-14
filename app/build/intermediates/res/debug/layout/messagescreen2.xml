@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header aligned to top -->
+
+    <include layout="@layout/header" />
+
+    <!-- Footer aligned to bottom -->
+
+    <include layout="@layout/footer" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/textViewMessage21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/M4"
+            />
+
+        <TextView
+            android:id="@+id/textViewMessage22"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/M5"
+            android:layout_below="@+id/textViewMessage21"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textViewMessage23"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/M6"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/textViewMessage22"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/psingh/AndroidStudioProjects/Login/app/src/main/res/layout/messagescreen2.xml -->
